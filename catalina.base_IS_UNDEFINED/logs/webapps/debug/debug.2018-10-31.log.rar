@@ -1,0 +1,33 @@
+2018-10-31 09:41:07.333[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductById-==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.roduct_img_id, pm.mg_addr, pm.mg_desc, pm.riority, pm.reate_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id = pm.product_id WHERE p.product_id = ? ORDER BY pm.priority DESC 
+2018-10-31 09:41:07.360[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductById-==> Parameters: 1(Long)
+2018-10-31 09:44:08.496[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductById-==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id = pm.product_id WHERE p.product_id = ? ORDER BY pm.priority DESC 
+2018-10-31 09:44:08.531[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductById-==> Parameters: 1(Long)
+2018-10-31 09:44:08.551[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductById-<==      Total: 2
+2018-10-31 16:57:19.819[main] DEBUG com.it888.o2o.dao.ProductDao.updateProduct-==>  Preparing: UPDATE tb_product SET product_name=? WHERE product_id = ? AND shop_id = ? 
+2018-10-31 16:57:19.862[main] DEBUG com.it888.o2o.dao.ProductDao.updateProduct-==> Parameters: 修改后的名字(String), null, null
+2018-10-31 16:57:19.869[main] DEBUG com.it888.o2o.dao.ProductDao.updateProduct-<==    Updates: 0
+2018-10-31 16:58:36.675[main] DEBUG com.it888.o2o.dao.ProductDao.updateProduct-==>  Preparing: UPDATE tb_product SET product_name=? WHERE product_id = ? AND shop_id = ? 
+2018-10-31 16:58:36.704[main] DEBUG com.it888.o2o.dao.ProductDao.updateProduct-==> Parameters: 修改后的名字(String), 1(Long), null
+2018-10-31 16:58:36.707[main] DEBUG com.it888.o2o.dao.ProductDao.updateProduct-<==    Updates: 0
+2018-10-31 16:59:31.787[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductById-==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id = pm.product_id WHERE p.product_id = ? ORDER BY pm.priority DESC 
+2018-10-31 16:59:31.818[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductById-==> Parameters: 1(Long)
+2018-10-31 16:59:31.836[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductById-<==      Total: 2
+2018-10-31 16:59:31.878[main] DEBUG com.it888.o2o.dao.ProductDao.updateProduct-==>  Preparing: UPDATE tb_product SET product_name=?, product_desc=?, img_addr=?, normal_price=?, promotion_price=?, priority=?, create_time=?, last_edit_time=?, enable_status=?, product_category_id = ? WHERE product_id = ? AND shop_id = ? 
+2018-10-31 16:59:31.883[main] DEBUG com.it888.o2o.dao.ProductDao.updateProduct-==> Parameters: 修改后的名字(String), 测试描述(String), 测试(String), 测试(String), 全是测试(String), 10(Integer), 2018-10-29 21:14:15.0(Timestamp), 2018-10-29 21:14:15.0(Timestamp), 0(Integer), 3(Long), 1(Long), 1(Long)
+2018-10-31 16:59:31.902[main] DEBUG com.it888.o2o.dao.ProductDao.updateProduct-<==    Updates: 1
+2018-10-31 17:36:51.993[main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId-==>  Preparing: DELETE FROM tb_product_img WHERE product_id = ? 
+2018-10-31 17:36:52.026[main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId-==> Parameters: 1(Long)
+2018-10-31 17:36:52.039[main] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId-<==    Updates: 2
+2018-10-31 19:06:07.917[main] DEBUG c.it888.o2o.dao.ProductImgDao.queryProductImgList-==>  Preparing: SELECT product_img_id, img_addr, img_desc, priority, create_time, product_id FROM tb_product_img WHERE product_id = ? 
+2018-10-31 19:06:07.940[main] DEBUG c.it888.o2o.dao.ProductImgDao.queryProductImgList-==> Parameters: 2(Long)
+2018-10-31 19:06:07.957[main] DEBUG c.it888.o2o.dao.ProductImgDao.queryProductImgList-<==      Total: 3
+2018-10-31 21:50:42.654[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductList-==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority. create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-10-31 21:50:42.687[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductList-==> Parameters: 1(Long), 0(Integer), 10(Integer)
+2018-10-31 21:51:47.069[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductList-==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority. create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-10-31 21:51:47.099[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductList-==> Parameters: 1(Long), 1(Integer), 10(Integer)
+2018-10-31 21:53:37.121[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductList-==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-10-31 21:53:37.153[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductList-==> Parameters: 1(Long), 0(Integer), 10(Integer)
+2018-10-31 21:53:37.170[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductList-<==      Total: 2
+2018-10-31 21:56:55.042[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductCount-==>  Preparing: SELECT COUNT(1) FROM tb_product WHERE shop_id = ? 
+2018-10-31 21:56:55.076[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductCount-==> Parameters: 1(Long)
+2018-10-31 21:56:55.090[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductCount-<==      Total: 1

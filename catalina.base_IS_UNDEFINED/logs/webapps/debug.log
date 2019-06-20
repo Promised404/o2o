@@ -1,0 +1,6 @@
+2018-11-01 08:41:46.221[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductList-==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-11-01 08:41:46.246[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductList-==> Parameters: 1(Long), 0(Integer), 10(Integer)
+2018-11-01 08:41:46.263[main] DEBUG com.it888.o2o.dao.ProductDao.queryProductList-<==      Total: 2
+2018-11-01 11:21:55.646[main] DEBUG c.i.o2o.dao.ProductDao.updateProductCategoryToNull-==>  Preparing: update tb_product SET product_category_id = null WHERE product_category_id = ? 
+2018-11-01 11:21:55.677[main] DEBUG c.i.o2o.dao.ProductDao.updateProductCategoryToNull-==> Parameters: 10(Long)
+2018-11-01 11:21:55.688[main] DEBUG c.i.o2o.dao.ProductDao.updateProductCategoryToNull-<==    Updates: 1

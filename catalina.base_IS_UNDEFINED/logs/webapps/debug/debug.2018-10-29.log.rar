@@ -1,0 +1,18 @@
+2018-10-29 15:06:41.752[main] DEBUG c.i.o.d.P.batchInsertProductCategory-==>  Preparing: INSERT INTO tb_product_category (product_category_name,priority,create_time,shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2018-10-29 15:06:41.784[main] DEBUG c.i.o.d.P.batchInsertProductCategory-==> Parameters: 商品测试类别2(String), 11(Integer), 2018-10-29 15:06:41.422(Timestamp), 1(Long), null, null, null, null
+2018-10-29 15:08:47.272[main] DEBUG c.i.o.d.P.batchInsertProductCategory-==>  Preparing: INSERT INTO tb_product_category (product_category_name,priority,create_time,shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2018-10-29 15:08:47.302[main] DEBUG c.i.o.d.P.batchInsertProductCategory-==> Parameters: 商品测试类别2(String), 11(Integer), 2018-10-29 15:08:46.979(Timestamp), 1(Long), null, null, null, null
+2018-10-29 15:09:40.392[main] DEBUG c.i.o.d.P.batchInsertProductCategory-==>  Preparing: INSERT INTO tb_product_category (product_category_name,priority,create_time,shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2018-10-29 15:09:40.423[main] DEBUG c.i.o.d.P.batchInsertProductCategory-==> Parameters: 商品测试类别1(String), 10(Integer), 2018-10-29 15:09:40.101(Timestamp), 1(Long), 商品测试类别2(String), 11(Integer), 2018-10-29 15:09:40.101(Timestamp), 1(Long)
+2018-10-29 15:09:40.429[main] DEBUG c.i.o.d.P.batchInsertProductCategory-<==    Updates: 2
+2018-10-29 18:51:20.014[main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: DELETE tb_product_category WHERE product_category_id = ? AND shop_id = ? 
+2018-10-29 18:51:20.050[main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 1(Long), 1(Long)
+2018-10-29 19:01:47.712[main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: DELETE FROM tb_product_category WHERE product_category_id = ? AND shop_id = ? 
+2018-10-29 19:01:47.738[main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 1(Long), 1(Long)
+2018-10-29 19:01:47.755[main] DEBUG c.i.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 1
+2018-10-29 21:14:15.409[main] DEBUG com.it888.o2o.dao.ProductDao.insertProduct-==>  Preparing: INSERT INTO tb_product (product_name,product_desc,img_addr,normal_price,promotion_price,priority ,create_time,last_edit_time,enable_status,product_category_id,shop_id) VALUES ( ?,?,?,?, ?,?,?,?, ?,?,? ) 
+2018-10-29 21:14:15.438[main] DEBUG com.it888.o2o.dao.ProductDao.insertProduct-==> Parameters: 测试商品名称(String), 测试描述(String), 测试(String), 测试(String), 全是测试(String), 10(Integer), 2018-10-29 21:14:15.13(Timestamp), 2018-10-29 21:14:15.13(Timestamp), 0(Integer), 3(Long), 1(Long)
+2018-10-29 21:14:15.455[main] DEBUG com.it888.o2o.dao.ProductDao.insertProduct-<==    Updates: 1
+2018-10-29 22:58:09.238[main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg-==>  Preparing: INSERT INTO tb_product_img (img_addr,img_desc,priority,create_time,product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2018-10-29 22:58:09.263[main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg-==> Parameters: 测试地址(String), 测试描述(String), 1(Integer), 2018-10-29 22:58:08.864(Timestamp), 1(Long), 测试地址2(String), 测试描述2(String), 2(Integer), 2018-10-29 22:58:08.864(Timestamp), 1(Long)
+2018-10-29 22:58:09.278[main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg-<==    Updates: 2
